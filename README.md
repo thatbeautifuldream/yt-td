@@ -1,2 +1,1 @@
-# yt-td
-YouTue Thumbnail Downloader
+# Get YouTube Thumbnail in High Resolution [here](https://milind.live/yth/)
