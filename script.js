@@ -4,7 +4,7 @@
 let download = () => {
   // Get the data from element on the form.
   const videoLink = document.getElementById("video-link").value;
-  const videoId = videoLink.split("=")[1];
+  const videoId = videoLink.slice(videoLink.length - 11);
   console.log(`Video id : ${videoId}`);
   window.open(`https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`, "_blank");
 };
