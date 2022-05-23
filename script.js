@@ -4,6 +4,12 @@
 // Get the input field
 var input = document.getElementById("video-link");
 
+const url = input.window.location.href;
+console.log(url);
+// getting video id from url : https://milind.live/yth?https://www.youtube.com/watch?v=BfsI6F9_izY
+const videoId = videoLink.slice(videoLink.length - 11);
+window.open(`https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`, "_blank");
+
 // Execute a function when the user presses a key on the keyboard
 input.addEventListener("keypress", function (event) {
   // If the user presses the "Enter" key on the keyboard
