@@ -18,9 +18,12 @@ let reset = () => {
 input.addEventListener("keypress", function (event) {
   // If the user presses the "Enter" key on the keyboard
   if (event.key === "Enter") {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    document.getElementById("download-btn").click();
+    const videoLink = document.getElementById("video-link").value;
+    const videoId = videoLink.split("=")[1];
+    console.log(`Video id : ${videoId}`);
+    window.open(
+      `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`,
+      "_blank"
+    );
   }
 });
